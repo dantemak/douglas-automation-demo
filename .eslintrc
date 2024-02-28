@@ -1,0 +1,63 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "playwright",
+    "import"
+  ],
+  "extends": [
+    "plugin:playwright/playwright-test",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
+  ],
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "lines-between-class-members": [
+      "error",
+      "always",
+      {
+        "exceptAfterSingleLine": true
+      }
+    ],
+    "no-return-assign": [
+      "error",
+      "except-parens"
+    ],
+    "no-param-reassign": "off",
+    "import/prefer-default-export": "off",
+    "max-len": [
+      "warn",
+      {
+        "code": 175,
+        "tabWidth": 2,
+        "ignorePattern": ".json",
+        "ignoreComments": true
+      }
+    ],
+    "no-console": "off",
+    "no-await-in-loop": "off",
+    "no-unused-expressions": "error",
+    "no-restricted-syntax": "off",
+    "no-unused-vars": "off",
+    "eol-last": "error",
+    "import/extensions": [
+      "error",
+      "never"
+    ],
+    "import/order": "off",
+    "class-methods-use-this": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "playwright/no-force-option": "off",
+    "playwright/no-wait-for-timeout": "off"
+  },
+  "ignorePatterns": [
+    "*.js",
+    "__generated__/*"
+  ]
+}

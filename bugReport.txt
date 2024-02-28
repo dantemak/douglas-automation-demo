@@ -1,0 +1,37 @@
+Title: Discrepancy between displayed and actual number of products after applying 'Marke' filter
+Browser: Chrome, WebKit
+
+Precondition
+User is on the Parfums product list page with cookies accepted.
+
+Steps to Reproduce
+Select the filter 'Marke' and choose the value '100 Bon'.
+Click on 'Schließen' (close) to apply the filter.
+Observe the number in the heading that indicates the number of found products.
+Manually count the number of product listings displayed on the page.
+
+Expected Result
+The number in the heading matches the actual count of products found and displayed on the page.
+
+Actual Result
+The actual number of products displayed on the page is greater than the number indicated in the heading.
+
+
+
+Title: Highlights Dropdown Missing Options After Removing 'Marke' Filter
+Browser: Chrome, WebKit
+
+Precondition
+User is on the Parfums product list page with cookies accepted.
+
+Steps to Reproduce
+Click on the 'Highlights' dropdown menu to view its options.
+Select the 'Marke' filter and choose the value '100 Bon'.
+Click on the cross (X) button near the '100 Bon' filter tag to remove this filter.
+Again, click the 'Highlights' dropdown menu to view the options.
+
+Expected Result
+All previously available options in the 'Highlights' dropdown menu should be visible and selectable after removing a specific 'Marke' filter.
+
+Actual Result
+Only the "Sale" option is available in the 'Highlights' dropdown menu, with other options missing.

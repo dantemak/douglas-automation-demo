@@ -1,0 +1,81 @@
+export const testData = {
+  Sale: [
+    {
+      id: 1,
+      higlight: "Sale",
+      marke: ["Armani"],
+      produktar: ["Eau de Parfum"],
+      geschenkFur: [],
+      fürWen: ["Weiblich"],
+    },
+    {
+      id: 2,
+      higlight: "Sale",
+      marke: ["Hugo Boss"],
+      produktar: ["Eau de Toilette"],
+      geschenkFur: [],
+      fürWen: ["Männlich"],
+    },
+    {
+      id: 3,
+      higlight: "Sale",
+      marke: ["Aire Sevilla", "Aramis"],
+      produktar: ["Eau de Toilette"],
+      geschenkFur: [],
+      fürWen: ["Unisex"],
+    },
+  ],
+
+  Neu: [
+    {
+      id: 4,
+      higlight: "NEU",
+      marke: [],
+      produktar: ["Duftset"],
+      geschenkFur: [],
+      fürWen: ["Männlich", "Weiblich", "Unisex"],
+    },
+    {
+      id: 5,
+      higlight: "NEU",
+      marke: [],
+      produktar: ["Eau de Parfum", "Eau de Toilette"],
+      geschenkFur: [],
+      fürWen: ["Männlich"],
+    },
+    {
+      id: 6,
+      higlight: "NEU",
+      marke: [],
+      produktar: ["Eau de Cologne"],
+      geschenkFur: [],
+      fürWen: ["Weiblich"],
+    },
+  ],
+  Limitiert: [
+    {
+      id: 7,
+      higlight: "Limitiert",
+      marke: ["Jean Paul Gaultier"],
+      produktar: ["Eau de Parfum"],
+      geschenkFur: ["Ostern"],
+      fürWen: ["Männlich"],
+    },
+    {
+      id: 8,
+      higlight: "Limitiert",
+      marke: ["Davidoff"],
+      produktar: ["Duftset"],
+      geschenkFur: ["Ostern", "Geburtstag"],
+      fürWen: ["Männlich"],
+    },
+    {
+      id: 9,
+      higlight: "Limitiert",
+      marke: ["Dior"],
+      produktar: ["Eau de Toilette"],
+      geschenkFur: ["Ostern"],
+      fürWen: ["Weiblich"],
+    },
+  ],
+};

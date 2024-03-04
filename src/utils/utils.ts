@@ -1,4 +1,4 @@
-import { Locator } from "@playwright/test";
+import { Locator, TestInfo } from "@playwright/test";
 import { BaseComponent } from "../pages/components/BaseComponent";
 
 export async function buildElementsArray<T extends BaseComponent>(
@@ -20,10 +20,10 @@ export function isEmpty(options: string | string[]) {
   );
 }
 
-const formatDocumentation = (title, description) =>
+const formatDocumentation = (title: string, description: string) =>
   `${title}\n\n${description}`;
 
-export const makeTestDoc = (testInfo, description) => {
+export const makeTestDoc = (testInfo: TestInfo, description: string) => {
   const doc = formatDocumentation(testInfo.title, description);
   const body = Buffer.from(doc);
   testInfo.attachments.push({

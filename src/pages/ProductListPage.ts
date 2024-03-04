@@ -28,27 +28,24 @@ export class ProductListPage extends BasePage {
       return;
     }
 
-    await this.page.getByTestId(filterDropdown).waitFor({ state: "visible" });
-    await this.page.getByTestId(filterDropdown).click();
-
     for (const option of options) {
+      await this.page.getByTestId(filterDropdown).waitFor({ state: "visible" });
+      await this.page.getByTestId(filterDropdown).click();
+
       const optionElement = this.page.getByRole("checkbox", {
         name: option,
       });
-      if (!(await optionElement.isVisible())) {
-        await this.page.getByTestId(filterDropdown).click();
-      }
-      await optionElement.click({ timeout: 2000 });
-      await this.page.waitForLoadState("load", {
+      await optionElement.click();
+      await this.page.waitForLoadState("domcontentloaded", {
         timeout: 5000,
       });
+
+      await this.page.waitForTimeout(1000);
+      await this.page.keyboard.press("Escape");
     }
-    await this.page.keyboard.press("Escape");
   }
 
   async getProductsCountFromHeader() {
-    //Waiting for page event
-    await this.page.waitForTimeout(500);
     const optionText = await this.page
       .locator(".product-overview__headline-wrapper")
       .textContent();

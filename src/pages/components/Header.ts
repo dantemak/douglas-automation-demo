@@ -9,5 +9,6 @@ export class Header extends BaseComponent {
 
   async openNavMenuItem(menuItem: NavMenuItems) {
     await this.wrapper.locator(`[data-uid="${menuItem}"]`).click();
+    await this.wrapper.page().waitForLoadState("load");
   }
 }

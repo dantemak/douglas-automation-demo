@@ -8,8 +8,8 @@ interface Data {
   higlight: string;
   marke: string[];
   produktar: string[];
-  geschenkFür: string[];
-  fürWen: string[];
+  furWen: string[];
+  geschenkFur: string[];
 }
 
 export async function selectProductListFilters(
@@ -25,7 +25,7 @@ export async function selectProductListFilters(
     await productListPage.showMoreFilters();
     await productListPage.selectFilterOptions(
       FilterDropdowns.geschenkFur,
-      ...testData.geschenkFür,
+      ...testData.geschenkFur,
     );
     await productListPage.selectFilterOptions(
       FilterDropdowns.produktart,
@@ -33,7 +33,7 @@ export async function selectProductListFilters(
     );
     await productListPage.selectFilterOptions(
       FilterDropdowns.furWen,
-      ...testData.fürWen,
+      ...testData.furWen,
     );
     await productListPage.selectFilterOptions(
       FilterDropdowns.marke,
@@ -58,8 +58,8 @@ export async function pushTestCaseInfo(testInfo: TestInfo, testData: Data) {
     `Navigate to Parfum section and select category ${testData.higlight}
   with filters: product type: ${testData.produktar.join(", ")},
   brand: ${testData.marke.join(", ")},
-  for whom: ${testData.fürWen.join(", ")},
-  gift for: ${testData.geschenkFür.join(", ")}.
+  for whom: ${testData.furWen.join(", ")},
+  gift for: ${testData.geschenkFur.join(", ")}.
   
   Validate that found products are equal to the count in the heading
   and contain correct data.`,

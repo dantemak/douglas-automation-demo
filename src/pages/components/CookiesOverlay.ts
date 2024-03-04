@@ -7,9 +7,8 @@ export class CookiesOverlay extends BaseComponent {
   }
 
   async acceptCookies() {
-    await this.wrapper.waitFor({ state: "visible" });
-    await this.wrapper
-      .locator(".uc-list-button__accept-all")
-      .click({ force: true });
+    const acceptAllButton = this.wrapper.locator(".uc-list-button__accept-all");
+    await acceptAllButton.waitFor({ state: "visible" });
+    await acceptAllButton.click({ force: true });
   }
 }

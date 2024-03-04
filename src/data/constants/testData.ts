@@ -6,7 +6,7 @@ export const testData = {
       marke: ["Armani"],
       produktar: ["Eau de Parfum"],
       geschenkFur: [],
-      fürWen: ["Weiblich"],
+      furWen: ["Weiblich"],
     },
     {
       id: 2,
@@ -14,7 +14,7 @@ export const testData = {
       marke: ["Hugo Boss"],
       produktar: ["Eau de Toilette"],
       geschenkFur: [],
-      fürWen: ["Männlich"],
+      furWen: ["Männlich"],
     },
     {
       id: 3,
@@ -22,7 +22,7 @@ export const testData = {
       marke: ["Aire Sevilla", "Aramis"],
       produktar: ["Eau de Toilette"],
       geschenkFur: [],
-      fürWen: ["Unisex"],
+      furWen: ["Unisex"],
     },
   ],
 
@@ -33,7 +33,7 @@ export const testData = {
       marke: [],
       produktar: ["Duftset"],
       geschenkFur: [],
-      fürWen: ["Männlich", "Weiblich", "Unisex"],
+      furWen: ["Männlich", "Weiblich", "Unisex"],
     },
     {
       id: 5,
@@ -41,7 +41,7 @@ export const testData = {
       marke: [],
       produktar: ["Eau de Parfum", "Eau de Toilette"],
       geschenkFur: [],
-      fürWen: ["Männlich"],
+      furWen: ["Männlich"],
     },
     {
       id: 6,
@@ -49,7 +49,7 @@ export const testData = {
       marke: [],
       produktar: ["Eau de Cologne"],
       geschenkFur: [],
-      fürWen: ["Weiblich"],
+      furWen: ["Weiblich"],
     },
   ],
   Limitiert: [
@@ -59,7 +59,7 @@ export const testData = {
       marke: ["Jean Paul Gaultier"],
       produktar: ["Eau de Parfum"],
       geschenkFur: ["Ostern"],
-      fürWen: ["Männlich"],
+      furWen: ["Männlich"],
     },
     {
       id: 8,
@@ -67,7 +67,7 @@ export const testData = {
       marke: ["Davidoff"],
       produktar: ["Duftset"],
       geschenkFur: ["Ostern", "Geburtstag"],
-      fürWen: ["Männlich"],
+      furWen: ["Männlich"],
     },
     {
       id: 9,
@@ -75,7 +75,7 @@ export const testData = {
       marke: ["Dior"],
       produktar: ["Eau de Toilette"],
       geschenkFur: ["Ostern"],
-      fürWen: ["Weiblich"],
+      furWen: ["Weiblich"],
     },
   ],
 };
